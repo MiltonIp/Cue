@@ -1,4 +1,4 @@
-Why are there no commits?
+Why are there no/only random commits?
 
 This was made a long, long time ago with SVN version control so I just uploaded all files here at once
 
