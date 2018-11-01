@@ -15,5 +15,7 @@ Run one instance of CueServer and 2 instances of CueClient; Either both on one m
 In the prompted fields of the clients, type in the host name and port number (both of which are displayed in the server GUI) and click connect to game
 
 # Run Source Code
+`git clone https://github.com/MiltonIp/Cue.git`
+
 If you want to run the code directly, the entrypoints are ServerMain.java in Cue/src/ip/milton/cue/server/execution/ServerMain.java and CueMain.java in Cue/src/ip/milton/cue/Client/execution/CueMain.java
 
