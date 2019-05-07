@@ -1,6 +1,6 @@
 Why are there no/only random commits?
 
-This was made a long, long time ago with SVN version control so I just uploaded all files here at once
+This was made with SVN version control so I just uploaded all files here at once
 
 # Cue
 A game that is a mixture of classic 2D top-down shooters and billiards for 2 players to play over a TCP/IP connection (the 2 players can play with each other as long as they are on the same network)
