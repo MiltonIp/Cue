@@ -126,13 +126,15 @@ public class GameArena extends JPanel implements Runnable {
 	 */
 	public void endGame(int player) {
 		this.setVisible(false);
-		this.endPanel = new GameEndScreen(player, this.frame, this);
+		// Temporarily disable game over screen and automatically restart game
+		// this.endPanel = new GameEndScreen(player, this.frame, this);
 
 		//Resetting values
 		for (Tanks tank : this.tankList) {
 			tank.setSlain(false);
 			tank.getKeysPressed().clear();
 		}
+		this.client.sendRestart();
 	}
 
 	/**
@@ -177,7 +179,7 @@ public class GameArena extends JPanel implements Runnable {
 
 			this.setLayout(null);
 			
-			//Adjuting play again button
+			//Adjusting play again button
 			this.add(restartButton);
 			
 			restartButton.setBounds((int) (this.frame.getWidth() * 0.38) , (int) (this.frame.getHeight() * 0.6), (int) (this.frame.getWidth() * 0.25), (int) (this.frame.getHeight() * 0.1));
