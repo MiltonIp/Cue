@@ -164,13 +164,18 @@ public class Server implements Runnable {
 	 * @return void
 	 */
 	public void restart(String command) {
-			
+		// Temporarily automatically restart game when one tank is slain	
 		//Make sure game only restarts when both players choose to restart
+		/*
 		if (command.charAt(0) == '1') {
 			this.playerOneRestart = true;
 		} else {
 			this.playerTwoRestart = true;
 		}
+		*/
+		
+		this.playerOneRestart = true;
+		this.playerTwoRestart = true;
 
 		//Resetting values
 		for (Tanks tank : this.tankList) {
